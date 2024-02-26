@@ -7,77 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF3D573A2B8CCDCD004825CE /* FaleConosco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3D57312B8CCDCD004825CE /* FaleConosco.framework */; };
-		DF3D573F2B8CCDCD004825CE /* FaleConoscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3D573E2B8CCDCD004825CE /* FaleConoscoTests.swift */; };
-		DF3D57402B8CCDCD004825CE /* FaleConosco.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3D57342B8CCDCD004825CE /* FaleConosco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF05F4ED2B8D35BF00A8C677 /* FaleConosco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF05F4E42B8D35BE00A8C677 /* FaleConosco.framework */; };
+		DF05F4F22B8D35BF00A8C677 /* FaleConoscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05F4F12B8D35BF00A8C677 /* FaleConoscoTests.swift */; };
+		DF05F4F32B8D35BF00A8C677 /* FaleConosco.h in Headers */ = {isa = PBXBuildFile; fileRef = DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DF3D573B2B8CCDCD004825CE /* PBXContainerItemProxy */ = {
+		DF05F4EE2B8D35BF00A8C677 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DF3D57282B8CCDCD004825CE /* Project object */;
+			containerPortal = DF05F4DB2B8D35BE00A8C677 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF3D57302B8CCDCD004825CE;
+			remoteGlobalIDString = DF05F4E32B8D35BE00A8C677;
 			remoteInfo = FaleConosco;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF3D57312B8CCDCD004825CE /* FaleConosco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaleConosco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3D57342B8CCDCD004825CE /* FaleConosco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaleConosco.h; sourceTree = "<group>"; };
-		DF3D57392B8CCDCD004825CE /* FaleConoscoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaleConoscoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3D573E2B8CCDCD004825CE /* FaleConoscoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaleConoscoTests.swift; sourceTree = "<group>"; };
+		DF05F4E42B8D35BE00A8C677 /* FaleConosco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FaleConosco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaleConosco.h; sourceTree = "<group>"; };
+		DF05F4EC2B8D35BF00A8C677 /* FaleConoscoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaleConoscoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF05F4F12B8D35BF00A8C677 /* FaleConoscoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaleConoscoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DF3D572E2B8CCDCD004825CE /* Frameworks */ = {
+		DF05F4E12B8D35BE00A8C677 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF3D57362B8CCDCD004825CE /* Frameworks */ = {
+		DF05F4E92B8D35BF00A8C677 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3D573A2B8CCDCD004825CE /* FaleConosco.framework in Frameworks */,
+				DF05F4ED2B8D35BF00A8C677 /* FaleConosco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF3D57272B8CCDCD004825CE = {
+		DF05F4DA2B8D35BE00A8C677 = {
 			isa = PBXGroup;
 			children = (
-				DF3D57332B8CCDCD004825CE /* FaleConosco */,
-				DF3D573D2B8CCDCD004825CE /* FaleConoscoTests */,
-				DF3D57322B8CCDCD004825CE /* Products */,
+				DF05F4E62B8D35BE00A8C677 /* FaleConosco */,
+				DF05F4F02B8D35BF00A8C677 /* FaleConoscoTests */,
+				DF05F4E52B8D35BE00A8C677 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DF3D57322B8CCDCD004825CE /* Products */ = {
+		DF05F4E52B8D35BE00A8C677 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF3D57312B8CCDCD004825CE /* FaleConosco.framework */,
-				DF3D57392B8CCDCD004825CE /* FaleConoscoTests.xctest */,
+				DF05F4E42B8D35BE00A8C677 /* FaleConosco.framework */,
+				DF05F4EC2B8D35BF00A8C677 /* FaleConoscoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF3D57332B8CCDCD004825CE /* FaleConosco */ = {
+		DF05F4E62B8D35BE00A8C677 /* FaleConosco */ = {
 			isa = PBXGroup;
 			children = (
-				DF3D57342B8CCDCD004825CE /* FaleConosco.h */,
+				DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */,
 			);
 			path = FaleConosco;
 			sourceTree = "<group>";
 		};
-		DF3D573D2B8CCDCD004825CE /* FaleConoscoTests */ = {
+		DF05F4F02B8D35BF00A8C677 /* FaleConoscoTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF3D573E2B8CCDCD004825CE /* FaleConoscoTests.swift */,
+				DF05F4F12B8D35BF00A8C677 /* FaleConoscoTests.swift */,
 			);
 			path = FaleConoscoTests;
 			sourceTree = "<group>";
@@ -85,25 +85,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DF3D572C2B8CCDCD004825CE /* Headers */ = {
+		DF05F4DF2B8D35BE00A8C677 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3D57402B8CCDCD004825CE /* FaleConosco.h in Headers */,
+				DF05F4F32B8D35BF00A8C677 /* FaleConosco.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DF3D57302B8CCDCD004825CE /* FaleConosco */ = {
+		DF05F4E32B8D35BE00A8C677 /* FaleConosco */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF3D57432B8CCDCD004825CE /* Build configuration list for PBXNativeTarget "FaleConosco" */;
+			buildConfigurationList = DF05F4F62B8D35BF00A8C677 /* Build configuration list for PBXNativeTarget "FaleConosco" */;
 			buildPhases = (
-				DF3D572C2B8CCDCD004825CE /* Headers */,
-				DF3D572D2B8CCDCD004825CE /* Sources */,
-				DF3D572E2B8CCDCD004825CE /* Frameworks */,
-				DF3D572F2B8CCDCD004825CE /* Resources */,
+				DF05F4DF2B8D35BE00A8C677 /* Headers */,
+				DF05F4E02B8D35BE00A8C677 /* Sources */,
+				DF05F4E12B8D35BE00A8C677 /* Frameworks */,
+				DF05F4E22B8D35BE00A8C677 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,46 +111,46 @@
 			);
 			name = FaleConosco;
 			productName = FaleConosco;
-			productReference = DF3D57312B8CCDCD004825CE /* FaleConosco.framework */;
+			productReference = DF05F4E42B8D35BE00A8C677 /* FaleConosco.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DF3D57382B8CCDCD004825CE /* FaleConoscoTests */ = {
+		DF05F4EB2B8D35BF00A8C677 /* FaleConoscoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF3D57462B8CCDCD004825CE /* Build configuration list for PBXNativeTarget "FaleConoscoTests" */;
+			buildConfigurationList = DF05F4F92B8D35BF00A8C677 /* Build configuration list for PBXNativeTarget "FaleConoscoTests" */;
 			buildPhases = (
-				DF3D57352B8CCDCD004825CE /* Sources */,
-				DF3D57362B8CCDCD004825CE /* Frameworks */,
-				DF3D57372B8CCDCD004825CE /* Resources */,
+				DF05F4E82B8D35BF00A8C677 /* Sources */,
+				DF05F4E92B8D35BF00A8C677 /* Frameworks */,
+				DF05F4EA2B8D35BF00A8C677 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DF3D573C2B8CCDCD004825CE /* PBXTargetDependency */,
+				DF05F4EF2B8D35BF00A8C677 /* PBXTargetDependency */,
 			);
 			name = FaleConoscoTests;
 			productName = FaleConoscoTests;
-			productReference = DF3D57392B8CCDCD004825CE /* FaleConoscoTests.xctest */;
+			productReference = DF05F4EC2B8D35BF00A8C677 /* FaleConoscoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DF3D57282B8CCDCD004825CE /* Project object */ = {
+		DF05F4DB2B8D35BE00A8C677 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					DF3D57302B8CCDCD004825CE = {
+					DF05F4E32B8D35BE00A8C677 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					DF3D57382B8CCDCD004825CE = {
+					DF05F4EB2B8D35BF00A8C677 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = DF3D572B2B8CCDCD004825CE /* Build configuration list for PBXProject "FaleConosco" */;
+			buildConfigurationList = DF05F4DE2B8D35BE00A8C677 /* Build configuration list for PBXProject "FaleConosco" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,26 +158,26 @@
 				en,
 				Base,
 			);
-			mainGroup = DF3D57272B8CCDCD004825CE;
-			productRefGroup = DF3D57322B8CCDCD004825CE /* Products */;
+			mainGroup = DF05F4DA2B8D35BE00A8C677;
+			productRefGroup = DF05F4E52B8D35BE00A8C677 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF3D57302B8CCDCD004825CE /* FaleConosco */,
-				DF3D57382B8CCDCD004825CE /* FaleConoscoTests */,
+				DF05F4E32B8D35BE00A8C677 /* FaleConosco */,
+				DF05F4EB2B8D35BF00A8C677 /* FaleConoscoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DF3D572F2B8CCDCD004825CE /* Resources */ = {
+		DF05F4E22B8D35BE00A8C677 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF3D57372B8CCDCD004825CE /* Resources */ = {
+		DF05F4EA2B8D35BF00A8C677 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -187,33 +187,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF3D572D2B8CCDCD004825CE /* Sources */ = {
+		DF05F4E02B8D35BE00A8C677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF3D57352B8CCDCD004825CE /* Sources */ = {
+		DF05F4E82B8D35BF00A8C677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3D573F2B8CCDCD004825CE /* FaleConoscoTests.swift in Sources */,
+				DF05F4F22B8D35BF00A8C677 /* FaleConoscoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DF3D573C2B8CCDCD004825CE /* PBXTargetDependency */ = {
+		DF05F4EF2B8D35BF00A8C677 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DF3D57302B8CCDCD004825CE /* FaleConosco */;
-			targetProxy = DF3D573B2B8CCDCD004825CE /* PBXContainerItemProxy */;
+			target = DF05F4E32B8D35BE00A8C677 /* FaleConosco */;
+			targetProxy = DF05F4EE2B8D35BF00A8C677 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DF3D57412B8CCDCD004825CE /* Debug */ = {
+		DF05F4F42B8D35BF00A8C677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +279,7 @@
 			};
 			name = Debug;
 		};
-		DF3D57422B8CCDCD004825CE /* Release */ = {
+		DF05F4F52B8D35BF00A8C677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,9 +338,10 @@
 			};
 			name = Release;
 		};
-		DF3D57442B8CCDCD004825CE /* Debug */ = {
+		DF05F4F72B8D35BF00A8C677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -351,6 +352,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,9 +374,10 @@
 			};
 			name = Debug;
 		};
-		DF3D57452B8CCDCD004825CE /* Release */ = {
+		DF05F4F82B8D35BF00A8C677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -385,6 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,7 +410,7 @@
 			};
 			name = Release;
 		};
-		DF3D57472B8CCDCD004825CE /* Debug */ = {
+		DF05F4FA2B8D35BF00A8C677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -421,7 +425,7 @@
 			};
 			name = Debug;
 		};
-		DF3D57482B8CCDCD004825CE /* Release */ = {
+		DF05F4FB2B8D35BF00A8C677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -439,34 +443,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF3D572B2B8CCDCD004825CE /* Build configuration list for PBXProject "FaleConosco" */ = {
+		DF05F4DE2B8D35BE00A8C677 /* Build configuration list for PBXProject "FaleConosco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF3D57412B8CCDCD004825CE /* Debug */,
-				DF3D57422B8CCDCD004825CE /* Release */,
+				DF05F4F42B8D35BF00A8C677 /* Debug */,
+				DF05F4F52B8D35BF00A8C677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF3D57432B8CCDCD004825CE /* Build configuration list for PBXNativeTarget "FaleConosco" */ = {
+		DF05F4F62B8D35BF00A8C677 /* Build configuration list for PBXNativeTarget "FaleConosco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF3D57442B8CCDCD004825CE /* Debug */,
-				DF3D57452B8CCDCD004825CE /* Release */,
+				DF05F4F72B8D35BF00A8C677 /* Debug */,
+				DF05F4F82B8D35BF00A8C677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF3D57462B8CCDCD004825CE /* Build configuration list for PBXNativeTarget "FaleConoscoTests" */ = {
+		DF05F4F92B8D35BF00A8C677 /* Build configuration list for PBXNativeTarget "FaleConoscoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF3D57472B8CCDCD004825CE /* Debug */,
-				DF3D57482B8CCDCD004825CE /* Release */,
+				DF05F4FA2B8D35BF00A8C677 /* Debug */,
+				DF05F4FB2B8D35BF00A8C677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DF3D57282B8CCDCD004825CE /* Project object */;
+	rootObject = DF05F4DB2B8D35BE00A8C677 /* Project object */;
 }
