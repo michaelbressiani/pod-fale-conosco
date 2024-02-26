@@ -10,6 +10,8 @@
 		DF05F4ED2B8D35BF00A8C677 /* FaleConosco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF05F4E42B8D35BE00A8C677 /* FaleConosco.framework */; };
 		DF05F4F22B8D35BF00A8C677 /* FaleConoscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05F4F12B8D35BF00A8C677 /* FaleConoscoTests.swift */; };
 		DF05F4F32B8D35BF00A8C677 /* FaleConosco.h in Headers */ = {isa = PBXBuildFile; fileRef = DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF05F4FD2B8D369800A8C677 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05F4FC2B8D369800A8C677 /* ContactUsViewController.swift */; };
+		DF05F4FF2B8D36A200A8C677 /* ContactUsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF05F4FE2B8D36A200A8C677 /* ContactUsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaleConosco.h; sourceTree = "<group>"; };
 		DF05F4EC2B8D35BF00A8C677 /* FaleConoscoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaleConoscoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF05F4F12B8D35BF00A8C677 /* FaleConoscoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaleConoscoTests.swift; sourceTree = "<group>"; };
+		DF05F4FC2B8D369800A8C677 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		DF05F4FE2B8D36A200A8C677 /* ContactUsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				DF05F4E72B8D35BE00A8C677 /* FaleConosco.h */,
+				DF05F4FC2B8D369800A8C677 /* ContactUsViewController.swift */,
+				DF05F4FE2B8D36A200A8C677 /* ContactUsViewController.storyboard */,
 			);
 			path = FaleConosco;
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				TargetAttributes = {
 					DF05F4E32B8D35BE00A8C677 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					DF05F4EB2B8D35BF00A8C677 = {
 						CreatedOnToolsVersion = 15.2;
@@ -174,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF05F4FF2B8D36A200A8C677 /* ContactUsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF05F4FD2B8D369800A8C677 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -369,6 +379,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -378,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -413,6 +425,7 @@
 		DF05F4FA2B8D35BF00A8C677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -428,6 +441,7 @@
 		DF05F4FB2B8D35BF00A8C677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
