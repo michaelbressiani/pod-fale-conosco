@@ -21,6 +21,8 @@ public class ContactUsViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        elementsConfig()
+        
     }
     
     @IBAction func contactUsButton(_ sender: UIButton) {
@@ -30,9 +32,15 @@ public class ContactUsViewController: UIViewController {
     }
     
     func elementsConfig() {
+        titleContactUsLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+        titleContactUsLabel.numberOfLines = 2
         titleContactUsLabel.text = "Fale com o Pan CredCard!"
-        descriptionContactUsLabel.text = "O número de telefone abaixo é da nossa central de atendimento, clicando nele você será direcionado para falar com nossos atendentes."
         
-        contactUsChangeButton.setTitle("123456789", for: .normal)
+        descriptionContactUsLabel.numberOfLines = 4
+        descriptionContactUsLabel.textAlignment = .justified
+        descriptionContactUsLabel.textColor = UIColor.gray
+        descriptionContactUsLabel.text = "O número de telefone abaixo é da nossa central de atendimento, clicando nele você será direcionado para falar com um de nossos atendentes."
+        
+        contactUsChangeButton.setAttributedTitle(NSAttributedString(string: "123456789", attributes: [.font: UIFont.systemFont(ofSize: 30.0, weight: .bold)]), for: .normal)
     }
 }
