@@ -7,18 +7,23 @@
 
 import UIKit
 
-class ContactUsViewController: UIViewController {
+public class ContactUsViewController: UIViewController {
     @IBOutlet weak var contactUsChangeButton: UIButton!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    @IBAction func contactUsButton(_ sender: UIButton) {
-        guard let url = URL(string: "tel://+5511934326088") else {
-            print("Não é possível fazer chamadas telefônicas neste dispositivo.")
-            return
+    
+    @IBAction func contactUsButton(_ sender: UIButton)
+    {
+        
+        let busPhone = "11934326088"
+        if let url = URL(string: "tel://\(busPhone)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
