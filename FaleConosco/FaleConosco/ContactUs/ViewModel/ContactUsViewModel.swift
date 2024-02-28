@@ -15,12 +15,15 @@ class ContactUsViewModel {
     }
     
     public func contactUs(fullNumberPhone: String) {
-        if let url = URL(string: "tel://\(fullNumberPhone)"), UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
+        
+        guard let urlTelefone = URL(string: "tel://\(fullNumberPhone)") else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(urlTelefone) {
+            UIApplication.shared.open(urlTelefone, options: [:], completionHandler: nil)
+        } else {
+            print("Dispositivo não tem capacidade de realizar chamadas telefônicas.")
         }
     }
 }
