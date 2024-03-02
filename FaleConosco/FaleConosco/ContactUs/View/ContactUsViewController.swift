@@ -24,12 +24,66 @@ public class ContactUsViewController: UIViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         elementsConfig()
+        fadeInElementsInitialConfigContactUs()
+        backNavegationFadeOut()
+    }
+    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fadeInContactUs()
     }
     
     @IBAction func contactUsButton(_ sender: UIButton) {
         
         let fullNumberPhone = viewModel.fullNumberPhone(prefix: prefix, ddd: ddd, numberPhone: numberPhone)
         viewModel.contactUs(fullNumberPhone: fullNumberPhone)
+    }
+    
+    func fadeInContactUs() {
+        UITableView.animate(withDuration: 2.0) {
+            self.titleContactUsLabel.alpha = 1
+        }
+        UISearchBar.animate(withDuration: 2.0) {
+            self.descriptionContactUsLabel.alpha = 1
+        }
+        UIButton.animate(withDuration: 2.0) {
+            self.titlePhoneNumberLabel.alpha = 1
+        }
+        UIButton.animate(withDuration: 2.0) {
+            self.contactUsChangeButton.alpha = 1
+        }
+    }
+    
+    func fadeInElementsInitialConfigContactUs() {
+        self.titleContactUsLabel.alpha = 0
+        self.descriptionContactUsLabel.alpha = 0
+        self.titlePhoneNumberLabel.alpha = 0
+        self.contactUsChangeButton.alpha = 0
+    }
+    
+    func backNavegationFadeOut() {
+        
+        let backButtonNavegation = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(backActionNavegation))
+        self.navigationItem.leftBarButtonItem = backButtonNavegation
+    }
+    
+    @objc func backActionNavegation() {
+        UITableView.animate(withDuration: 1.0) {
+            self.titleContactUsLabel.alpha = 0
+        }
+        UISearchBar.animate(withDuration: 1.0) {
+            self.descriptionContactUsLabel.alpha = 0
+        }
+        UIButton.animate(withDuration: 1.0) {
+            self.titlePhoneNumberLabel.alpha = 0
+        }
+        UIButton.animate(withDuration: 1.0) {
+            self.contactUsChangeButton.alpha = 0
+        }
+            
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+        self.navigationController?.popViewController(animated: false)
+        })
     }
     
     func elementsConfig() {
@@ -44,9 +98,13 @@ public class ContactUsViewController: UIViewController {
         
         titlePhoneNumberLabel.text = "Telefone:"
         titlePhoneNumberLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-            
         
-        contactUsChangeButton.setAttributedTitle(NSAttributedString(string: numberPhonePrint, attributes: [.font: UIFont.systemFont(ofSize: 25.0, weight: .bold)]), for: .normal)
+        let titleString = NSAttributedString(string: numberPhonePrint, attributes: [
+                    NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue,
+                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25.0, weight: .bold)
+                ])
+        contactUsChangeButton.setAttributedTitle(titleString, for: .normal)
+        contactUsChangeButton.tintColor = UIColor(red: 0/255.0, green: 176/255.0, blue: 240/255.0, alpha: 1.0)
     }
 }
 
