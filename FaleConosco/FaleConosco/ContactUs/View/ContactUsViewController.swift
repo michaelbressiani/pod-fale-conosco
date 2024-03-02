@@ -8,7 +8,6 @@ import UIKit
 
 public class ContactUsViewController: UIViewController {
     
-    
     @IBOutlet weak var titleContactUsLabel: UILabel!
     @IBOutlet weak var descriptionContactUsLabel: UILabel!
     @IBOutlet weak var titlePhoneNumberLabel: UILabel!
@@ -17,11 +16,13 @@ public class ContactUsViewController: UIViewController {
     let prefix = "55"
     let ddd = "11"
     let numberPhone = "923456789"
+    let numberPhonePrint = "(11) 9 2345 6789"
     
     var viewModel: ContactUsViewModel = ContactUsViewModel()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         elementsConfig()
     }
     
@@ -45,6 +46,20 @@ public class ContactUsViewController: UIViewController {
         titlePhoneNumberLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
             
         
-        contactUsChangeButton.setAttributedTitle(NSAttributedString(string: numberPhone, attributes: [.font: UIFont.systemFont(ofSize: 25.0, weight: .bold)]), for: .normal)
+        contactUsChangeButton.setAttributedTitle(NSAttributedString(string: numberPhonePrint, attributes: [.font: UIFont.systemFont(ofSize: 25.0, weight: .bold)]), for: .normal)
+    }
+}
+
+extension ContactUsViewController: ContactUsViewModelProtocol {
+    func successContact() {
+    }
+    
+    func errorContact() {
+        let alert = UIAlertController(title: "\u{1F615}", message: "Dispositivo não realiza chamadas telefônicas", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
